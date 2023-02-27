@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>    
+        <link rel="stylesheet" href="{% static 'estilo.css' %}">
+    </head>
+
+    <body>
+        <div class="menu">
+            <a href="/">
+                <img class="logo_riot logo_cinza" src="{% static 'riotlogo.png' %}"></img>
+            </a>
+            
+        </div>
+        <div class="cards">
+            
+            <a class="logo logo_cinza" href="/League_of_Legends">
+                <img src="{% static 'lollogo.jpg' %}"></img>
+            </a>  
+                
+            <a class="logo logo_cinza" href="/Valorant">
+                <img src="{% static 'valorantlogo.jpg' %}"></img>
+            </a>  
+        </div>
+    </body>
+
+</html>

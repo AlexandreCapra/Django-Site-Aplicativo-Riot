@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'estilo.css' %}"> 
+    </head>
+
+    <body>
+        <div class="menu">
+            <a href="/">
+                <img class="logo_riot logo_cinza" src="{% static 'riotlogo.png' %}"></img>
+            </a>
+        </div>
+       
+        <div class="video_player">
+            <video autoplay loop muted>
+            <source src="{% static 'lol.mp4' %}" type="video/webm"></a>
+            </video>
+        </div>
+        
+        <div class="container_cards_personagens">
+        {% if listaPersonagem %}
+            {% for Personagem in listaPersonagem %}
+                <div class="card">
+                    <img class="card-lol" src="{{Personagem.foto_pers}}"/>
+                    <div class="card-nome">
+                        <span>{{Personagem.nome}}</span>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+        
+            <div>
+                {{sobre}} 
+            </div>
+        
+        {% endif %}
+        </div>
+
+        <div class="footer">
+            
+        </div>
+    </body>
+
+</html>

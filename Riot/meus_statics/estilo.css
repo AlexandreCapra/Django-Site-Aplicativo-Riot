@@ -1,0 +1,115 @@
+html{
+  max-height: 100vh;
+  max-width: 100vw;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  background: rgb(2,0,36);
+  background: linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(121,9,121,1) 45%, rgba(9,0,105,1) 100%);
+  box-sizing: border-box;
+}
+
+.menu{ 
+    height: 200px;
+    width: 100%;
+    align-items: center;    
+    background-color: #272727;
+    display: flex;
+ } 
+ .menu a{
+    margin-left: 60px;
+ }
+
+ .menu > a > img{
+  width:300px;
+ }
+.cards > a > img{
+  width: 100%;
+
+} 
+ .cards{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 60px;
+  height: calc(100vh - 200px);
+  margin-left: 60px;
+  margin-right: 60px;
+ }
+.logo{
+  flex: 1 1  auto;
+}  
+.logo_cinza{
+  filter: grayscale(100%);
+}
+
+.logo_cinza:hover{
+  filter: grayscale(0%);
+}
+
+.video_player{
+  width: 100%;
+  text-align: center;
+}
+.video_player > video{
+  width: 100%;
+}
+
+.container_cards_personagens{
+  justify-content: center;
+  gap:30px;
+  display:flex;
+  width: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 500px;
+  height: 700px;
+  transition: all 0.3s ease-out;
+  
+  
+ 
+    /* From https://css.glass */
+  background: rgba(4, 67, 82, 0.467);
+  
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.card-lol{
+  width: 100%;
+  height: 100%;  
+  object-fit:none;
+  object-position:68% 20%;
+}
+.card-valorant{
+  width: 100%;
+  height: 100%;  
+  object-fit:cover;
+ 
+}
+.card:hover{
+  z-index: 9;
+  transform: scale(1.25);
+}
+.card-nome{
+  font-size: 50px;
+  align-self: center;
+  padding: 5px;
+  color: white;
+}
+
+.footer{
+  height:200px; 
+  width: 100%; 
+  background-color:#272727;
+}
